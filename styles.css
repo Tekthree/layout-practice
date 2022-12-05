@@ -489,4 +489,72 @@ h1 {
 
 /* Artist Section */
 
+.artists, .trial {
+  text-align: center;
+}
+
+.artists .heading p{
+  margin: 3em auto;
+  max-width: 700px;
+}
+
+.artists .cards{
+  margin: 6em 0 4em 0;
+  flex-wrap: wrap;
+
+}
+
+.artists .card{
+  border: 1px #42a3c3 solid;
+  background: radial-gradient(rgb(17,68,96), rgba(17,68,96,0.5));
+  border-radius: 10px;
+  position: relative;
+  padding: 7em 1em 1em 1em;
+  max-width: 16em;
+
+}
+
+
+.artists .bg-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.artists .profile-img{
+  width: 5em;
+  position: relative;
+  border: 0.5em rgb(17, 68, 96) solid;
+  border-radius: 50%;
+  margin-bottom: 1em;
+
+}
+
+.artists .card p{
+  margin: 1em 0 1.5em 0;
+
+}
+ 
+.stars{
+  color: #ffb92d;
+
+}
+
+.card-btn{
+  background: none;
+  border: 1px #284b60 solid;
+  width: 100%;
+  padding: 1em 0;
+  border-radius: 10px;
+  color: #eee;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card-btn:hover{
+  background: rgba(255, 255,255,0.1);
+}
 
