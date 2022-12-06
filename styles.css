@@ -6,6 +6,8 @@ body {
   background: #020824;
 }
 
+
+
 * {
   box-sizing: border-box;
 }
@@ -489,33 +491,31 @@ h1 {
 
 /* Artist Section */
 
-.artists, .trial {
+.artists,
+.trial {
   text-align: center;
 }
 
-.artists .heading p{
+.artists .heading p {
   margin: 3em auto;
   max-width: 700px;
 }
 
-.artists .cards{
+.artists .cards {
   margin: 6em 0 4em 0;
   flex-wrap: wrap;
-
 }
 
-.artists .card{
+.artists .card {
   border: 1px #42a3c3 solid;
-  background: radial-gradient(rgb(17,68,96), rgba(17,68,96,0.5));
+  background: radial-gradient(rgb(17, 68, 96), rgba(17, 68, 96, 0.5));
   border-radius: 10px;
   position: relative;
   padding: 7em 1em 1em 1em;
   max-width: 16em;
-
 }
 
-
-.artists .bg-img{
+.artists .bg-img {
   position: absolute;
   top: 0;
   left: 0;
@@ -524,26 +524,23 @@ h1 {
   border-radius: 10px;
 }
 
-.artists .profile-img{
+.artists .profile-img {
   width: 5em;
   position: relative;
   border: 0.5em rgb(17, 68, 96) solid;
   border-radius: 50%;
   margin-bottom: 1em;
-
 }
 
-.artists .card p{
+.artists .card p {
   margin: 1em 0 1.5em 0;
-
 }
- 
-.stars{
+
+.stars {
   color: #ffb92d;
-
 }
 
-.card-btn{
+.card-btn {
   background: none;
   border: 1px #284b60 solid;
   width: 100%;
@@ -554,7 +551,101 @@ h1 {
   transition: 0.3s;
 }
 
-.card-btn:hover{
-  background: rgba(255, 255,255,0.1);
+.card-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Changing colore for cards */
+
+.artists .card:nth-child(2) {
+  background: radial-gradient(rgb(30, 35, 99), rgba(30, 35, 99, 0.5));
+  border-color: #394b95;
+}
+
+.artists .card:nth-child(2) .profile-img {
+  border-color: rgb(30, 35, 99);
+}
+
+.artists .card:nth-child(2) .card-btn {
+  border-color: #353165;
+}
+
+.artists .card:nth-child(3) {
+  background: radial-gradient(rgb(82, 22, 81), rgba(82, 22, 81, 0.5));
+  border-color: #bb3bad;
+}
+
+.artists .card:nth-child(3) .profile-img {
+  border-color: rgb(82, 22, 81);
+}
+
+.artists .card:nth-child(3) .card-btn {
+  border-color: #552e58;
+}
+
+.artists .card:nth-child(4) {
+  background: radial-gradient(rgb(78, 13, 48), rgba(78, 13, 48, 0.5));
+  border-color: #b14d44;
+}
+
+.artists .card:nth-child(4) .profile-img {
+  border-color: rgb(78, 13, 48);
+}
+
+.artists .card:nth-child(4) .card-btn {
+  border-color: #472847;
+}
+
+/* Trial Section */
+
+.trial {
+  background: url(img/background.jpg) center no-repeat;
+  background-size: cover;
+  padding: 6em 1em;
+}
+
+.trial p {
+  margin: 2em auto 3em auto;
+  max-width: 700px;
+}
+
+/* Footer Section */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+footer li {
+  margin: 1em 0;
+}
+
+footer li a {
+  color: #ccc;
+}
+
+
+
+footer li a:hover{
+  text-decoration: underline;
+}
+
+footer input{
+  background: #1b2039;
+  border: none;
+  padding: 0.7em;
+  border-radius: 5px;
+}
+
+footer hr{
+  border: 1px #1b2039 solid;
+  margin: 1.5em 0;
+}
+
+footer p{
+  margin: 1em 0;
 }
 
